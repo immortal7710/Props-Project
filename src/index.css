@@ -123,3 +123,52 @@ body {
   font-size: 10px;
   color: #8b8b8b;
 }
+
+
+
+/* ---------- CARD HOVER EFFECT ---------- */
+.card {
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* Image hover */
+.card:hover .top img {
+  transform: scale(1.1);
+  border-color: #111;
+}
+
+.top img {
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+.bottom button {
+  transition: all 0.3s ease;
+}
+
+.bottom button:hover {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #111;
+}
+
+/* Tag hover */
+.center .tag h4 {
+  transition: all 0.3s ease;
+}
+
+.card:hover .center .tag h4 {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Subtle text color change */
+.card:hover .center h2 {
+  color: #111;
+}
